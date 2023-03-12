@@ -20,11 +20,15 @@ class Double:
         self.url = f"https://blaze.com/api/roulette_games/history?startDate={self.start_date}T{self.cur_hour}.369Z&endDate={self.end_date}T{self.cur_hour}.370Z&page=1"
         self.save_file = save_file
         self.data = self.get_blaze_data()
+        self.total = self.get_total_pages()
 
     def get_current_time_hours(self):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
         return current_time
+
+    def get_total_pages(self):
+        return self.data["total_pages"]
 
     def get_blaze_data(self):
         r = requests.get(self.url)
@@ -39,7 +43,7 @@ class Double:
 
     def get_only_result_data(self):
         results = []
-        print(self.data)
+        # print(self.data)
         for v in self.data["records"]:
             val = v["roll"]
             results.append(val)
