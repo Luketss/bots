@@ -17,7 +17,7 @@ class Double:
         self.start_date = start_date
         self.end_date = end_date
         self.cur_hour = self.get_current_time_hours()
-        self.url = f"https://blaze.com/api/roulette_games/history?startDate={self.start_date}T{self.cur_hour}.369Z&endDate={self.end_date}T{self.cur_hour}.370Z&page=1"
+        self.url = f"https://blaze-4.com/api/roulette_games/history?startDate={self.start_date}T{self.cur_hour}.369Z&endDate={self.end_date}T{self.cur_hour}.370Z&page=1"
         self.save_file = save_file
         self.data = self.get_blaze_data()
         self.total = self.get_total_pages()
