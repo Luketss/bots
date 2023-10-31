@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 valores_passados = []
 
 driver = webdriver.Chrome()
-driver.get("https://blaze.com/pt/games/crash")
+driver.get("https://blaze-4.com/pt/games/crash")
 
 time.sleep(4)
 
