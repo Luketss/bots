@@ -12,7 +12,7 @@ import requests
 
 def login_to_blaze(driver, login="", senha=""):
     isCaptcha = True
-    driver.get("https://blaze.com/pt/")
+    driver.get("https://blaze-4.com/pt/")
     wait = WebDriverWait(driver, 10)
     wait.until(
         EC.visibility_of_element_located(
