@@ -75,6 +75,6 @@ def main():
 
 if __name__ == "__main__":
     browser_lib = webdriver.Chrome()
-    browser_lib.get("https://blaze.com/pt/games/crash?modal=auth&tab=login")
+    browser_lib.get("https://blaze-4.com/pt/games/crash?modal=auth&tab=login")
     main()
     browser_lib.close()
