@@ -17,7 +17,7 @@ def get_blaze_data(self):
 def make_request(start_date="2023-03-14", end_date="2023-03-15", save_file=True):
     cur_hour = get_current_time_hours()
     print(cur_hour)
-    url = f"https://blaze.com/api/roulette_games/history?startDate={start_date}T{cur_hour}.000Z&endDate={end_date}T{cur_hour}.000Z&page=1"
+    url = f"https://blaze-4.com/api/roulette_games/history?startDate={start_date}T{cur_hour}.000Z&endDate={end_date}T{cur_hour}.000Z&page=1"
 
     r = requests.get(url)
     if save_file:
